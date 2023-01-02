@@ -1,0 +1,36 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.landing-page-image{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #363032;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    position:fixed;
+    /* background-image: url('./assests/Done\ Your\ Way.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+}

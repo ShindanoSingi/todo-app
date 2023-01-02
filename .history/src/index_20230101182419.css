@@ -1,0 +1,389 @@
+* {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.signin-icon-signin-text-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bell-icon-bell-num-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.signin-text {
+  display: none;
+}
+
+.bell-num,
+.signin-text {
+  font-size: 15px;
+}
+
+.bell-num {
+  text-align: center;
+  color: #fff;
+  padding: 2px 5px;
+  background-color: #5f89f2;
+  border-radius: 50px;
+  margin-top: -5px;
+}
+
+.bell-icon,
+.signin-icon {
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #313133;
+}
+
+div.signin-icon-signin-text-container:hover p.signin-text {
+  display: block;
+}
+
+.bell-icon-signin-container {
+  display: grid;
+  grid-template-columns: 60px 60px;
+}
+
+.username,
+.signin-text {
+  color: #fff;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #121212;
+  box-shadow: -11px 11px 22px #070707, 11px -11px 22px #1d1d1d;
+}
+
+h1 {
+  position: absolute;
+  top: 10%;
+  z-index: 1;
+}
+
+h2 {
+  font-size: 40px;
+  color: #5f89f2;
+}
+
+.salutation-container {
+  margin-top: 30px;
+  padding-left: 10px;
+}
+
+.day,
+.percent,
+.small-boards,
+.done,
+.active {
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.date,
+.completed {
+  font-size: 15px;
+  color: #6a6f75;
+}
+
+.day-to-percent-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.tasks-num {
+  text-align: center;
+  font-size: 17px;
+  background: #ffff;
+  padding: 2px 7px;
+  border-radius: 50px;
+  height: 20px;
+}
+
+.tasks {
+  font-size: 30px;
+  font-weight: light;
+  color: #5f89f2;
+}
+
+.boards-num {
+  font-size: 17px;
+  color: #8292ad;
+  border: 2px solid #8292ad;
+  padding: 2px 7px;
+  border-radius: 50px;
+  height: 20px;
+}
+
+.big-boards {
+  font-size: 30px;
+  font-weight: light;
+  color: #8292ad;
+}
+
+.tasks-num-tasks-container,
+.boards-num-boards-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.line-tasks {
+  width: 50%;
+}
+
+.line-boards {
+  width: 50%;
+  border: 1px solid #8292ad;
+}
+
+.line-tasks-ine-boards-container {
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 10px; */
+  padding: 0 10px;
+}
+
+.tasks-to-boards-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.num-boards {
+  font-size: 17px;
+  text-align: center;
+  color: #fff;
+  background: #5f89f2;
+  padding: 2px;
+  border-radius: 50px;
+  height: 20px;
+  width: 20px;
+}
+
+.small-boards {
+  color: #fff;
+}
+
+.num-boards-small-boards-container {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #8292ad;
+  padding: 5px;
+  border-radius: 50px;
+  padding-right: 15px;
+}
+
+.active {
+  text-align: center;
+  background: #5f89f2;
+  padding: 0px 10px;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+.done {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #8292ad;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+.active-done-container {
+  display: flex;
+  align-items: center;
+}
+
+.num-boards-to-small-boards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.task-title {
+  word-wrap: break-word;
+  padding: 5px;
+}
+
+.todo-card {
+  /* width: 40%; */
+  margin: 0 10px;
+  padding: 15px;
+  min-height: 50px;
+  border-radius: 30px;
+  /* background: #fff */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  /* grid-template-rows: auto; */
+  gap: 20px;
+}
+
+/* Credit: Cole McCombs; */
+.landing-page-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Credit: Cole McCombs; */
+.button {
+  min-width: 150px;
+  min-height: 40px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #37b7ff;
+  background: linear-gradient(
+    90deg,
+    rgb(59, 123, 190) 0%,
+    rgb(29, 181, 228) 100%
+  );
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(28, 120, 186, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 85%;
+  padding: 10px;
+}
+
+/* Credit: Cole McCombs; */
+button::before {
+  content: '';
+  border-radius: 1000px;
+  min-width: calc(150px + 12px);
+  min-height: calc(40px + 12px);
+  border: 6px solid #008cff;
+  box-shadow: 0 0 60px rgba(25, 150, 233, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* Credit: Cole McCombs; */
+.button:hover,
+.button:focus {
+  color: #bfbfd4;
+  transform: translateY(-6px);
+}
+
+/* Credit: Cole McCombs; */
+button:hover::before,
+button:focus::before {
+  opacity: 1;
+}
+
+/* Credit: Cole McCombs; */
+button::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #0f8bdd;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+/* Credit: Cole McCombs; */
+button:hover::after,
+button:focus::after {
+  animation: none;
+  display: none;
+}
+
+/* Credit: Cole McCombs; */
+@keyframes ring {
+  0% {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+  }
+}
+
+.landing-page-image {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.landing-page-image {
+  -webkit-animation: anim 8s infinite linear;
+  animation: anim 8s infinite linear;
+}
+
+@-webkit-keyframes anim {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(90deg);
+  }
+}
+
+@keyframes anim {
+  from {
+    transform: rotateY(90deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: #000000;
+}
