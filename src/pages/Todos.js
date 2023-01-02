@@ -2,10 +2,19 @@ import React, { useEffect, useState } from 'react'
 import { RxBell } from 'react-icons/rx'
 import { GoSignIn } from 'react-icons/go'
 import { FcCheckmark } from 'react-icons/fc'
+import axios from 'axios';
 
 function Todos() {
 
+    axios(`http://20.228.231.174/api/todos/`)
+        .then(res => {
+            console.log(res.data)
+        })
 
+    axios(`http://20.228.231.174/api/todoUser/`)
+        .then(res => {
+            console.log(res.data)
+        })
 
 
 
